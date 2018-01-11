@@ -1,5 +1,5 @@
 {
 	// Define a custom path to meld compare
-	// Ex: C:\Program Files (x86)\Meld\Meld.exe
-	"cmd_compare_path": "/usr/bin/meld"
+	"cmd_compare_path_win": "C:\\Program Files (x86)\\Meld\\Meld.exe",
+	"cmd_compare_path_unix": "/usr/bin/meld"
 }
