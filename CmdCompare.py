@@ -22,7 +22,7 @@ class CmdCompareCommand(sublime_plugin.TextCommand):
 
 class PluginListener(sublime_plugin.EventListener):
     def on_activated(self, view = None):
-        print([view, view.file_name()])
+        # print([view, view.file_name()])
         global fileQueue
         if view.file_name() is not None:
             fileQueue.append(view.file_name())
