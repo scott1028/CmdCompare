@@ -1,0 +1,4 @@
+{
+	//Define a custom path to meld compare
+	"cmd_compare_path": "/usr/bin/meld"
+}

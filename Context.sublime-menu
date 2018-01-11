@@ -1,0 +1,4 @@
+[
+    { "caption": "-", "id": "diff" },
+    { "command": "cmd_compare", "caption":"CMD Compare: Show Diff"}
+]
