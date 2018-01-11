@@ -1,0 +1,35 @@
+[
+    {
+        "caption": "Preferences",
+        "id": "preferences",
+        "mnemonic": "n",
+        "children": [
+            {
+                "caption": "Package Settings",
+                "id": "package-settings",
+                "mnemonic": "P",
+                "children": [
+                    {
+                        "caption": "CMD Compare",
+                        "children": [
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/CmdCompare/CmdCompare.sublime-settings"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/CmdCompare.sublime-settings"
+                                },
+                                "caption": "Settings – User"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
