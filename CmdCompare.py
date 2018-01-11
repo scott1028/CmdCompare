@@ -4,9 +4,6 @@ import os
 import webbrowser
 import subprocess
 
-# class CmdCompareCommand(sublime_plugin.TextCommand):
-#     def run(self, edit):
-#         self.view.insert(edit, 0, "Hello, World!")
 
 fileQueue = []
 
@@ -16,6 +13,9 @@ def settings():
 def get_location():
     return settings().get('cmd_compare_path')
 
+class CmdCompareCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        subprocess.Popen([str(get_location()), str(fileQueue[0]), str(fileQueue[1])])
 
 class PluginListener(sublime_plugin.EventListener):
     def on_activated(self, view = None):
@@ -23,7 +23,3 @@ class PluginListener(sublime_plugin.EventListener):
         if view.file_name() is not None:
             fileQueue.append(view.file_name())
             fileQueue = fileQueue[-2:]
-        if len(fileQueue) == 2:
-            print(fileQueue)
-            # subprocess.Popen([str(get_location()), str(fileQueue[0]), str(fileQueue[1])])
-
