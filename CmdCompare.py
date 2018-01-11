@@ -11,7 +11,12 @@ def settings():
     return sublime.load_settings('CmdCompare.sublime-settings')
 
 def get_location():
-    return settings().get('cmd_compare_path')
+    if is_windows():
+        return settings().get('cmd_compare_path_win')
+    return settings().get('cmd_compare_path_unix')
+
+def is_windows():
+    return os.name == 'nt'
 
 class CmdCompareCommand(sublime_plugin.TextCommand):
     def run(self, edit):
