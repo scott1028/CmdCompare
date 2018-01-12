@@ -1,5 +1,6 @@
 {
     // Define a custom path to meld compare
     "cmd_compare_path_win": "C:\\Program Files (x86)\\Meld\\Meld.exe",
+    // Alternative: "$YOUR_PATH/vimdiff_script.sh"
     "cmd_compare_path_unix": "/usr/bin/meld"
 }
