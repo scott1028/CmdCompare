@@ -23,7 +23,7 @@ class CmdCompareCommand(sublime_plugin.TextCommand):
         subprocess.Popen([str(get_location()), str(fileQueue[0]), str(fileQueue[1])])
 
     def is_enabled(self):
-        if len(fileQueue) >= 2 and fileQueue[0] !== fileQueue[1]:
+        if len(fileQueue) >= 2 and (fileQueue[0] != fileQueue[1]):
             return True
         return False
 
