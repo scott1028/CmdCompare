@@ -26,6 +26,13 @@
                                 },
                                 "caption": "Settings – User"
                             }
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/CmdCompare/vimdiff_script.sh"
+                                },
+                                "caption": "To using vimdiff as cmd template"
+                            }
                         ]
                     }
                 ]
